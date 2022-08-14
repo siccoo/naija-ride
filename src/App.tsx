@@ -4,18 +4,18 @@ import './App.css';
 import { HomePage } from './app/containers/HomePage';
 
 const AppContainer = styled.div`
-${tw`
-w-full
-h-full
-flex
-flex-col
-`}
+  ${tw`
+    w-full
+    h-full
+    flex
+    flex-col
+  `}
 `
 
 function App() {
   return <AppContainer>
     <HomePage />
-  </AppContainer>
+  </AppContainer> 
 }
 
 export default App;
