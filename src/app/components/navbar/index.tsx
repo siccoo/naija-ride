@@ -14,3 +14,7 @@ const NavbarContainer = styled.div`
      justify-between
    `}
 `
+
+export function Navbar() {
+ return <NavbarContainer></NavbarContainer>
+}
