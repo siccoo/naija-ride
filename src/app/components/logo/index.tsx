@@ -27,5 +27,12 @@ img{
 `;
 
 export function Logo() {
-
+    return (
+        <LogoContainer>
+            <Image>
+                <img src={CarLogoImg} alt="car-logo" />
+            </Image>
+            <LogoText>NaijaCars</LogoText>
+        </LogoContainer>
+    )
 }
