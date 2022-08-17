@@ -8,7 +8,7 @@ const NavbarContainer = styled.div`
    ${tw`
      w-full
      min-w-full
-     max-w-2xl
+     max-w-screen-2xl
      flex
      flex-row
      items-center
