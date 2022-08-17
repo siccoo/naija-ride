@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import {Slide as Menu} from "react-burger-menu"
+import {Slide as Menu} from "react-burger-menu";
+import { useMediaQuery } from "react-responsive";
 
 
 const ListContainer = styled.ul`
