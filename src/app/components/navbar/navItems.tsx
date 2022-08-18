@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import { Slide as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { useMediaQuery } from "react-responsive";
 import { SCREENS } from "../responsive";
+import menuStyles from "./menuStyles";
 
 
 const ListContainer = styled.ul`
@@ -34,24 +35,26 @@ export function NavItems() {
 
     const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
-    if (isMobile) return (
-        <Menu>
-            <ListContainer>
-                <NavbarItems>
-                    <a href="#">Home</a>
-                </NavbarItems>
-                <NavbarItems>
-                    <a href="#">Cars</a>
-                </NavbarItems>
-                <NavbarItems>
-                    <a href="#">About</a>
-                </NavbarItems>
-                <NavbarItems>
-                    <a href="#">Contact us</a>
-                </NavbarItems>
-            </ListContainer>
-        </Menu>
-    )
+    if (isMobile) {
+        return (
+            <Menu styles={menuStyles}>
+                <ListContainer>
+                    <NavbarItems>
+                        <a href="#">Home</a>
+                    </NavbarItems>
+                    <NavbarItems>
+                        <a href="#">Cars</a>
+                    </NavbarItems>
+                    <NavbarItems>
+                        <a href="#">About</a>
+                    </NavbarItems>
+                    <NavbarItems>
+                        <a href="#">Contact us</a>
+                    </NavbarItems>
+                </ListContainer>
+            </Menu>
+        )
+    }
 
     return (
         <ListContainer>
