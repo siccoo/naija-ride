@@ -33,7 +33,7 @@ hover:text-gray-700
 
 export function NavItems() {
 
-    const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
+    const isMobile = useMediaQuery({ maxWidth: SCREENS.xs });
 
     if (isMobile) {
         return (
